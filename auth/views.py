@@ -30,7 +30,8 @@ class RegisterView(APIView):
         if get_user_model().objects.filter(username=username).exists():
             return Response({'error': 'User with this username already exists'}, status=400)
 
-        first_name, last_name = request.data.get('full_name').split(' ')
+        first_name = request.data.get('first_name')
+        last_name = request.data.get('last_name')
         password = request.data.get('password')
 
         user = get_user_model().objects.create_user(

@@ -42,4 +42,4 @@ class RegisterView(APIView):
         )
 
         token = Token.objects.create(user=user)
-        return Response({'Token': token.key})
+        return Response({'token': token.key})

@@ -1,0 +1,43 @@
+.new_task_form {
+    display: flex;
+    background: var(--darker);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.new_task_input {
+    flex: 1;    
+    border-radius: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+}
+
+.new_task_input::placeholder {
+    color: var(--gray);
+}
+
+.new_task_submit {
+    color: var(--pink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.new_task_submit:hover {
+    opacity: .8;
+}
+
+.new_task_submit:active {
+    opacity: .6;
+}
+
+.df {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}

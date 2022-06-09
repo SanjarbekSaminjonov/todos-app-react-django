@@ -1,0 +1,65 @@
+.form__control {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form__control form {
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: nowrap column;
+    padding: 2rem;
+    padding-top: 1rem;
+    backdrop-filter: blur(5px);
+}
+
+.btn {
+    display: block;
+    margin-top: 1rem;
+    width: calc(100% - 16px);
+}
+
+.inp {
+    color: #fff !important;
+}
+
+
+.inp label {
+    color: #fff;
+}
+
+.inp input {
+    color: #fff;
+}
+
+.btn_control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: calc(100% - 16px);
+    height: 40px;
+    background-color: #fff;
+}
+
+.btn_control > button {
+    display: block;
+    height: 100%;
+    width: 50%;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.btn_control > button.active {
+    box-shadow: inset 0 0 2px 4px rgb(172, 170, 170);
+}

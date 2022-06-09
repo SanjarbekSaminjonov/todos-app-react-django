@@ -1,0 +1,19 @@
+.task_list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+}
+
+.selectFilter {
+    width: 100%;
+    height: 60px;
+    border-radius: 1rem;
+    padding: 1rem;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    background: var(--darker);
+    color: #fff;
+}

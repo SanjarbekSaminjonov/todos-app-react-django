@@ -43,3 +43,10 @@ class RegisterView(APIView):
 
         token = Token.objects.create(user=user)
         return Response({'token': token.key})
+
+
+class UserDeleteView(APIView):
+    def delete(self, request):
+        user = request.user
+        user.delete()
+        return Response({'success': 'User deleted'})
